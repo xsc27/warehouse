@@ -14,7 +14,7 @@ from unittest import mock
 
 import alembic.config
 import pretend
-import psycopg2.extensions
+import psycopg.extensions
 import pytest
 import sqlalchemy
 import venusian
@@ -152,7 +152,7 @@ def test_creates_engine(monkeypatch):
 
 def test_raises_db_available_error(pyramid_services, metrics):
     def raiser():
-        raise OperationalError("foo", {}, psycopg2.OperationalError())
+        raise OperationalError("foo", {}, psycopg.OperationalError())
 
     engine = pretend.stub(connect=raiser)
     request = pretend.stub(
@@ -172,10 +172,10 @@ def test_raises_db_available_error(pyramid_services, metrics):
 @pytest.mark.parametrize(
     ("read_only", "tx_status"),
     [
-        (True, psycopg2.extensions.TRANSACTION_STATUS_IDLE),
-        (True, psycopg2.extensions.TRANSACTION_STATUS_INTRANS),
-        (False, psycopg2.extensions.TRANSACTION_STATUS_IDLE),
-        (False, psycopg2.extensions.TRANSACTION_STATUS_INTRANS),
+        (True, psycopg.extensions.TRANSACTION_STATUS_IDLE),
+        (True, psycopg.extensions.TRANSACTION_STATUS_INTRANS),
+        (False, psycopg.extensions.TRANSACTION_STATUS_IDLE),
+        (False, psycopg.extensions.TRANSACTION_STATUS_INTRANS),
     ],
 )
 def test_create_session(monkeypatch, pyramid_services, read_only, tx_status):
@@ -224,7 +224,7 @@ def test_create_session(monkeypatch, pyramid_services, read_only, tx_status):
             pretend.call(isolation_level="SERIALIZABLE", readonly=True, deferrable=True)
         ]
 
-    if tx_status != psycopg2.extensions.TRANSACTION_STATUS_IDLE:
+    if tx_status != psycopg.extensions.TRANSACTION_STATUS_IDLE:
         connection.connection.rollback.calls == [pretend.call()]
 
 

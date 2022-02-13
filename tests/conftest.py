@@ -26,7 +26,7 @@ import pytest
 import webtest as _webtest
 
 from jinja2 import Environment, FileSystemLoader
-from psycopg2.errors import InvalidCatalogName
+from psycopg.errors import InvalidCatalogName
 from pyramid.i18n import TranslationString
 from pyramid.static import ManifestCacheBuster
 from pyramid_jinja2 import IJinja2Environment
