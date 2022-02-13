@@ -15,7 +15,6 @@ import logging
 
 import alembic.config
 import psycopg
-import psycopg.extensions
 import pyramid_retry
 import sqlalchemy
 import venusian
@@ -177,7 +176,7 @@ def _create_session(request):
 
     if (
         connection.connection.get_transaction_status()
-        != psycopg2.extensions.TRANSACTION_STATUS_IDLE
+        != psycopg.pq.TransactionStatus.IDLE
     ):
         # Work around a bug where SQLALchemy leaves the initial connection in
         # a pool inside of a transaction.
