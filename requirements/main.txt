@@ -1035,9 +1035,8 @@ python-slugify==6.1.1 \
     --hash=sha256:00003397f4e31414e922ce567b3a4da28cf1436a53d332c9aeeb51c7d8c469fd \
     --hash=sha256:8c0016b2d74503eb64761821612d58fcfc729493634b1eb0575d8f5b4aa1fbcf
     # via -r requirements/main.in
-pytz==2022.1 \
-    --hash=sha256:1e760e2fe6a8163bc0b3d9a19c4f84342afa0a2affebfaa84b01b978a02ecaa7 \
-    --hash=sha256:e68985985296d9a66a881eb3193b0906246245294a881e7c8afe623866ac6a5c
+pytz==2022.5 \
+    --hash=sha256:335ab46900b1465e714b4fda4963d87363264eb662aab5e65da039c25f1f5b22
     # via
     #   babel
     #   celery
