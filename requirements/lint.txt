@@ -196,9 +196,9 @@ types-psycopg2==2.9.13 \
     --hash=sha256:0f92bd778bf9c5abe96b5947b449fa468a53d798a5155cd0c442be248f2f8818 \
     --hash=sha256:2015365ffcf0494fb6613c2ffe0144ebadb2068b340df89578c4a2581135210b
     # via -r requirements/lint.in
-types-python-slugify==5.0.4 \
-    --hash=sha256:a9d44edf034d5ceab8442ce602f976b7880ee935baeff7443964aed93f7e21d4 \
-    --hash=sha256:d0564feb7e21bd9ab646e692ae93eb9bf1b36e9b9bf7bf38d52eab43d29de2f6
+types-python-slugify==7.0.0.1 \
+    --hash=sha256:3644bb44a25847ba5c8f9d15757f1d4b76064857c30e93517723618bd1152a19 \
+    --hash=sha256:6b2d16e1465896df0e3685bd38eab7b8f945a3a7c18c4a2c2ef391b0e48dfce8
     # via -r requirements/lint.in
 types-pytz==2021.3.6 \
     --hash=sha256:6805c72d51118923c5bf98633c39593d5b464d2ab49a803440e2d7ab6b8920df \
