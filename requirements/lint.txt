@@ -180,6 +180,10 @@ types-certifi==2021.10.8.1 \
     --hash=sha256:2290008f32e6ac7c69e779d04fa1bc4c6bb4c7200aa3b3b072ad5475a8968aa5 \
     --hash=sha256:546cd3ca4466855959fbc8868fd7139a50eb55a2d1fae497e13b60af439597a3
     # via -r requirements/lint.in
+types-docutils==0.19.1.1 \
+    --hash=sha256:a024cada35f0c13cc45eb0b68a102719018a634013690b7fef723bcbfadbd1f1 \
+    --hash=sha256:be0a51ba1c7dd215d9d2df66d6845e63c1009b4bbf4c5beb87a0d9745cdba962
+    # via types-setuptools
 types-first==2.0.2 \
     --hash=sha256:129155be97b4a65a86a2b4cbc6f2d1de5b40d2c5d370289779fd6dd0293b69f6 \
     --hash=sha256:444b4eaba3342f3d360f9f49eb4a175538da212e31ed1f26ee9b54c23f5fa0de
@@ -212,9 +216,9 @@ types-requests==2.27.20 \
     --hash=sha256:63344573cde6c4efd44d867c0158d9fb7e6beb95721cbe9882f3f857ee8a5398 \
     --hash=sha256:68b8de86552116424ec23b77afc925e111afb6496d3821b183b7d151b3b834d4
     # via -r requirements/lint.in
-types-setuptools==57.4.14 \
-    --hash=sha256:828f7e7e51e157876f47c80518b23ba0c3c36aa8081efd39d5d39f393938aec9 \
-    --hash=sha256:df02fe1dd244f58cf4e67cfc3d0a97930a2d61a72dd89f21d81c71017cd83f9a
+types-setuptools==65.6.0.3 \
+    --hash=sha256:7ddd7415282fa97ab18e490206067c0cdb126b103743e72ee86783d7af6481c5 \
+    --hash=sha256:ad729fc3a9a3946f73915eaab16ce56b30ed5ae998479253d809d76b3889ee09
     # via -r requirements/lint.in
 types-urllib3==1.26.13 \
     --hash=sha256:40f8fb5e8cd7d57e8aefdee3fdd5e930aa1a1bb4179cdadd55226cea588af790 \
