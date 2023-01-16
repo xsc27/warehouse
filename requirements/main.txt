@@ -618,9 +618,9 @@ kombu==5.2.4 \
     --hash=sha256:37cee3ee725f94ea8bb173eaab7c1760203ea53bbebae226328600f9d2799610 \
     --hash=sha256:8b213b24293d3417bcf0d2f5537b7f756079e3ea232a8386dcc89a59fd2361a4
     # via celery
-limits==2.6.1 \
-    --hash=sha256:6238ca7aa9f87b8bc5a14a6f000e6e613e61f173491b6636bcc144e540de5656 \
-    --hash=sha256:c5663e88eb6b9a22a6986d2763e759929831fd1f260e44a647d8bad81b7ef257
+limits==3.1.6 \
+    --hash=sha256:6a9a5fae2aa5b89341bfae976d4fb4cb925389f168f929103b99bd244319267d \
+    --hash=sha256:ee4b6bf20b16a4f07f60da1ef2cb99da3b66edba4c10c5802c65708ebbdec2ed
     # via -r requirements/main.in
 lxml==4.8.0 \
     --hash=sha256:078306d19a33920004addeb5f4630781aaeabb6a8d01398045fcde085091a169 \
@@ -1086,6 +1086,19 @@ sentry-sdk==1.5.10 \
     --hash=sha256:0a9eb20a84f4c17c08c57488d59fdad18669db71ebecb28fb0721423a33535f9 \
     --hash=sha256:972c8fe9318a415b5cf35f687f568321472ef94b36806407c370ce9c88a67f2e
     # via -r requirements/main.in
+setuptools==62.1.0 \
+    --hash=sha256:26ead7d1f93efc0f8c804d9fafafbe4a44b179580a7105754b245155f9af05a8 \
+    --hash=sha256:47c7b0c0f8fc10eec4cf1e71c6fdadf8decaa74ffa087e68cd1c20db7ad6a592
+    # via
+    #   -r requirements/main.in
+    #   limits
+    #   pastedeploy
+    #   plaster
+    #   pyramid
+    #   repoze-sendmail
+    #   zope-deprecation
+    #   zope-interface
+    #   zope-sqlalchemy
 six==1.16.0 \
     --hash=sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926 \
     --hash=sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254
@@ -1401,18 +1414,3 @@ zope-sqlalchemy==1.6 \
 zxcvbn==4.4.28 \
     --hash=sha256:151bd816817e645e9064c354b13544f85137ea3320ca3be1fb6873ea75ef7dc1
     # via -r requirements/main.in
-
-# The following packages are considered to be unsafe in a requirements file:
-setuptools==62.1.0 \
-    --hash=sha256:26ead7d1f93efc0f8c804d9fafafbe4a44b179580a7105754b245155f9af05a8 \
-    --hash=sha256:47c7b0c0f8fc10eec4cf1e71c6fdadf8decaa74ffa087e68cd1c20db7ad6a592
-    # via
-    #   -r requirements/main.in
-    #   limits
-    #   pastedeploy
-    #   plaster
-    #   pyramid
-    #   repoze-sendmail
-    #   zope-deprecation
-    #   zope-interface
-    #   zope-sqlalchemy
